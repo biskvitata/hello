@@ -1,114 +1,143 @@
 body {
   background-color: #FFF;
   margin: 0;
-  padding: 0px 60px;
+  padding: 0;
 }
 
-.header {
-  background-color: #466995;
-  position: fixed;
-  border-bottom: 1px solid #466995;
-  overflow-y: auto;
+#cover {
+  height: 900px;
+  position: relative;
+  top: -55px;
   width: 100%;
-  z-index: 1000;
+ background:
+    url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-8/htmlcss1-img_bicycles.jpeg") no-repeat center bottom;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.navigation {
+  background-color: rgba(255, 255, 255, 0.9);
+  overflow-y: auto;
+  position: fixed;
+  left: 0;
+  top: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 10000;
 }
 
 ul {
-  margin: 30px auto;
-  text-align: center;
+  padding: 0;
 }
 
 li {
-  color: #FFF;
+  color: #14213D;
   display: inline-block;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Abel', sans-serif;
   font-size: 16px;
-  text-align: left;
   font-weight: 300;
+  margin: 16px 20px;
   text-transform: uppercase;
-  padding: 0 40px;
 }
 
-li:hover {
-  color: #DBE9EE;
+#logo {
+  color: #FCA311;
+  font-family: 'Amatic SC', cursive;
+  font-size: 32px;
+  padding: 0px 50px;
+}
+
+.cover-content {
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  top: 280px;
+  width: 70%;
 }
 
 h1 {
-  color: #466995;
-  font-family: 'Oswald', sans-serif;
-  font-size: 32px;
-  font-weight: 300;
-  text-transform: uppercase;
+  color: #FFF;
+  font-family: 'Amatic SC', cursive;
+  font-size: 72px;
+  line-height: 60px;
+  padding: 20px 10px;
+  text-align: center;
 }
 
 h2 {
-  color: #333;
-  font-family: 'Varela Round', sans-serif;
-  font-size: 26px;
-  font-weight: 100;
-  margin: 0 auto 40px auto;
+  color: #000;
+  font-family: 'Raleway', sans-serif;
+  font-size: 42px;
+  font-weight: 300;
+  text-align: center;
 }
 
 h3 {
-  color: #466995;
-  font-family: 'Oswald', sans-serif;
-  font-size: 18px;
+  color: #14213D;
+  font-family: 'Abel', sans-serif;
+  font-size: 28px;
   text-align: center;
-  font-weight: 700;
   text-transform: uppercase;
 }
 
 h4 {
-  color: #466995;
-  font-family: 'Oswald', sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-align: center;
-  text-transform: uppercase
+  color: #FCA311;
+  font-family: 'Abel', sans-serif;
+  font-size: 24px;
+  margin: 0px 0px 50px 0px;
 }
 
 p {
   color: #333;
-  font-family: 'Varela Round', sans-serif;
-  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
 }
 
-.welcome {
-  background-color: #DBE9EE;
-  box-sizing: border-box;
-  padding: 40px;
-  position: static;
-  left: 0;
-  top: 80px;
-  text-align: center;
-  width: 100%;
-  z-index: 999;
+a {
+  text-decoration: none;
 }
 
-.question {
-  margin: 120px auto;
-  text-align: center;
-  position: relative;
-}
-
-div.question{
-  top: 240px;
-}
-
-.answer {
-  border: 1px solid #466995;
-  display: inline-block;
-  height: 100px;
-  margin: 20px;
-  padding-top: 40px;
-  width: 220px;
-}
-
-
-.answer:hover {
-  background: #C0D6DF;
+.btn {
+  background-color: #14213D;
   color: #FFF;
+  font-family: 'Amatic SC', cursive;
+  font-size: 26px;
+  padding: 14px;
+  background-image: -webkit-linear-gradient(#FFD194, #BC1324);
+}
+
+.btn:hoover {
+  background-color: #14213D;
+  color: #FFF;
+  font-family: 'Amatic SC', cursive;
+  font-size: 26px;
+  padding: 14px;
+  background-image: -webkit-linear-gradient(#FFFFFF, #AAAAAA);
 }
 
 
+.products {
+  background: #EEEFF1;
+  box-sizing: border-box;
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.product {
+  display: inline-block;
+  margin: 0px 2% 80px 2%;
+  text-align: center;
+  width: 45%;
+}
+
+.product img {
+  width: 100%;
+}
+
+.blue {
+  color: #14213D !important;
+}
